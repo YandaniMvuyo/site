@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yandani</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Images/favicon.ico">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class ="H1">
+        <a href="#" class ="logo">YM</a>
+        <nav class="nav1" id ="NavOne">
+            <a href="Index.html">Home</a>
+            <a href="#About">About</a>
+            <a href="#MSL" >Skills</a>
+            <a href="#Pr">Projects</a>
+            <a href="#C">contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        </nav>
+    </header>
+    <div class ="Me">
+        <div class ="Overview">
+            <h3>Hi, I am</h3>
+            <h1>Yandani Mvuyo</h1>
+            <h3> a <Span>Web developer</Span></h3>
+            <p>I enjoy the process of designing, developing and seeing my work coming to life as a website.
+            </p>
+            
+        </div>
+        <div class ="MyImage">
+            <img src="Images/YandaniPic.png" class ="MyImage">
+        </div>
+    </div>
+    <div class ="About">
+     <h3 id="About">About me</h3>
+     <p class="Ab">I am a front-end web developer from Qumbu, South Africa and a full-time student at <a href="https://www.mandela.ac.za/">Nelson Mandela University</a>. <br>Currently I am learning better and more advanced ways to buidling a website, using html,css, javascript and Python. To know me more, feel free to contact me.</p>
+    </div>
+<div class=" SkillsCenter">
+
+    <h3 id="MSL" >
+        My Skills
+    </h3>
+    <p></p>
+    <div class="MySkills">
+        <div class="skills html">HTML 5</div>
+      </div>
+      
+      <p></p>
+      <div class="MySkills">
+        <div class="skills css">CSS</div>
+      </div>
+      
+      <p></p>
+      <div class="MySkills">
+        <div class="skills js">JavaScript</div>
+      </div>
+      
+      <p></p>
+      <div class="MySkills">
+        <div class="skills Python">Python</div>
+      </div>
+      <p></p>
+      <div class="MySkills">
+        <div class="skills UX">UNIX</div>
+      </div>
+      <p></p>
+      <div class="MySkills">
+        <div class="skills SQL">SQL</div>
+      </div>
+     
+    </div>
+    <div class=" Projects">
+        <h3 id="Pr">My Projects</h3>
+    
+        <img src="Images/Projects-modified-removebg-preview.png" alt="" class="Profil">
+    </div>
+    
+    <div class="bottom-container">
+        
+            <a id="C" href="#"><i class="uil uil-facebook-f"></i></a>
+            <a id="C" href="https://twitter.com/sa_yamco?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="uil uil-twitter"></i></a>
+            <a id="C" href="#"><i class="uil uil-instagram-alt"></i></a>
+            <a id="C" href="https://za.linkedin.com/in/yandani-mvuyo-6889b61a8"><i class="uil uil-linkedin"></i></a>
+    
+        <button class ="Bt">Get my CV</button>
+      </div>
+<script>
+    function myFunction() {
+  var x = document.getElementById("NavOne");
+  if (x.className === "nav1") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav1";
+  }
+  $("a").on('click', function(event) {
+
+// Make sure this.hash has a value before overriding default behavior
+if (this.hash !== "") {
+  // Prevent default anchor click behavior
+  event.preventDefault();
+
+  // Store hash
+  var hash = this.hash;
+
+  // Using jQuery's animate() method to add smooth page scroll
+  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, 800, function(){
+
+    // Add hash (#) to URL when done scrolling (default click behavior)
+    window.location.hash = hash;
+  });
+} // End if
+});
+}
+</script>
+</body>
+</html>
